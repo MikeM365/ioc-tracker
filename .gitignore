@@ -1,0 +1,28 @@
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+env/
+
+# IDE or Editor specific files
+.vscode/
+.idea/
+
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyo
+*.pyd
+
+# Test result
+.coverage
+*.cover
+
+# MacOS
+.DS_Store
+
+# Logs and databases
+*.log
+*.sqlite3
+ioc_tracker.db
