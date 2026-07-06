@@ -36,7 +36,7 @@ A command-line interface (CLI) tool for tracking Indicators of Compromise (IOCs)
 
 &nbsp;  ```bash
 
-&nbsp;  git clone https://github.com/yourusername/ioc-tracker.git
+&nbsp;  C:\Users\mike_\OneDrive\ioc-tracker\ioc-tracker
 
 &nbsp;  cd ioc-tracker
 
