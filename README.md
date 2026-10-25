@@ -21,28 +21,19 @@ IOC Tracker CLI lets you record, view, and search Indicators of Compromise — I
 
 ## Installation
 
-git clone <repo-url>
-cd ioc-tracker
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-python database_setup.py
-
+1. Clone the repository and `cd` into `ioc-tracker`
+2. Create and activate a virtual environment with `python -m venv venv` and `source venv/bin/activate`
+3. Install dependencies with `pip install -r requirements.txt`
+4. Run `python database_setup.py` to set up the database
 
 ## Usage
 
-Run `python main.py` and follow the on-screen menu:
+Run `python main.py` to open the interactive menu:
 
-=== IOC Tracker CLI ===
-
-Add new IOC
-View all IOCs
-Search IOCs
-Exit
-
-- **Add new IOC** prompts for the IOC type (IP, Domain, or Hash), its value, and a source describing where it was identified.
-- **View all IOCs** lists every IOC currently stored.
-- **Search IOCs** prompts for a search term and returns matching records.
+1. **Add new IOC** — prompts for the IOC type (IP, Domain, or Hash), its value, and a source describing where it was identified
+2. **View all IOCs** — lists every IOC currently stored
+3. **Search IOCs** — prompts for a search term and returns matching records
+4. **Exit** — closes the program
 
 ## License
 
