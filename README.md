@@ -1,114 +1,53 @@
-\# IOC Tracker CLI
+# IOC Tracker CLI
 
+A command-line tool for tracking Indicators of Compromise (IOCs) in a local SQLite database.
 
+## Description
 
-A command-line interface (CLI) tool for tracking Indicators of Compromise (IOCs) effectively.
+IOC Tracker CLI lets you record, view, and search Indicators of Compromise — IP addresses, domains, and file hashes — each with a source describing where it was identified. Data is stored locally in SQLite with no external services required.
 
+## Features
 
+- Add new IOCs with type (IP, Domain, or Hash), value, and source
+- View all stored IOCs
+- Search IOCs by keyword
+- Interactive command-line menu — no arguments needed
+- Local SQLite database, no external dependencies beyond the Python standard library
 
-\## Features
+## Requirements
 
+- Python 3.x
+- SQLite (included with Python)
 
+## Installation
 
-\- Add, view, and manage IOCs in a local SQLite database.
-
-\- Supports different IOC types (e.g., IP addresses, URLs, hashes).
-
-\- Easy setup and usage.
-
-
-
-\## Prerequisites
-
-
-
-\- Python 3.x
-
-\- SQLite (included with Python)
-
-
-
-\## Setup
-
-
-
-1\. \*\*Clone the Repository:\*\*
-
-&nbsp;  ```bash
-
-&nbsp;  clone https://github.com/MikeM365/ioc-tracker.git
-
-&nbsp;  cd ioc-tracker
-
-Create and Activate a Virtual Environment:
-
-
-
-bash
-
+git clone <repo-url>
+cd ioc-tracker
 python -m venv venv
-
-\# Activate the venv
-
-\# Windows: .\\venv\\Scripts\\activate
-
-\# macOS/Linux: source venv/bin/activate
-
-Install Dependencies:
-
-
-
-bash
-
+source venv/bin/activate
 pip install -r requirements.txt
-
-Set Up the Database:
-
+python database_setup.py
 
 
-Run the database setup script:
+## Usage
 
-bash
+Run `python main.py` and follow the on-screen menu:
 
-python database\_setup.py
+=== IOC Tracker CLI ===
 
-Usage
+Add new IOC
+View all IOCs
+Search IOCs
+Exit
 
-To add a new IOC:
+- **Add new IOC** prompts for the IOC type (IP, Domain, or Hash), its value, and a source describing where it was identified.
+- **View all IOCs** lists every IOC currently stored.
+- **Search IOCs** prompts for a search term and returns matching records.
 
+## License
 
+MIT License.
 
-bash
+## Author
 
-python main.py add --type <type> --value <value> --description <description>
-
-To view all IOCs:
-
-
-
-bash
-
-python main.py list
-
-Contributing
-
-Fork the repository
-
-Create your feature branch (git checkout -b feature/AmazingFeature)
-
-Commit your changes (git commit -m 'Add some AmazingFeature')
-
-Push to the branch (git push origin feature/AmazingFeature)
-
-Open a pull request
-
-License
-
-This project is licensed under the MIT License.
-
-
-
-text
-
-
-
+Mike McGregor
